@@ -9,28 +9,11 @@
 
   </head>
   <body>
-    <a-scene embedded arjs>
-
-        <a-marker-camera type='pattern' url='pattern-sigurd_shirt_marker_4.patt'>
-
-        <a-text value="Neverfruit" font="kelsonsans" width="6" material="color: white" position="2.5 0.25 -1.5"></a-text>
-        <a-text value="Neverfruit" font="kelsonsans" width="2" material="color: blue" position="-2.5 2 -1.5"></a-text>
-        <a-text value="Neverfruit" font="kelsonsans" width="10" material="color: yellow" position="-2.5 0.25 1.5"></a-text>
-        <a-text value="Neverfruit" font="kelsonsans" width="3" material="color: black" position="-2.5 4 -1.5"></a-text>
-        <a-text value="Neverfruit" font="kelsonsans" width="5" material="color: pink" position="4 0.25 -1.5"></a-text>
-        <a-text value="Neverfruit" font="kelsonsans" width="1" material="color: grey" position="-2.5 0.25 9></a-text>
-        <a-text value="Neverfruit" font="kelsonsans" width="9" material="color: purple" position="-2.5 3 -1.5"></a-text>
-        <a-text value="Neverfruit" font="kelsonsans" width="11" material="color: red" position="3 5 -5"></a-text>
-        <a-text value="Neverfruit" font="kelsonsans" width="4" material="color: orange" position="-1 0.25 -4"></a-text>
-        
-        
-        
-        
-        
-        
-      
-     </a-marker-camera>     
-      
-    </a-scene>
+   <a-marker preset='hiro'>
+  <!-- here define the content to display on top of the marker -->
+  <a-box position='0 0.5 0' material='color: red;'></a-box>
+</a-marker>
+<!-- define a simple camera -->
+<a-entity camera></a-entity>
   </body>
 </html>
